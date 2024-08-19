@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/audio_item"
+    android:background="#111111"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:id="@+id/music_img"
+        android:src="@drawable/hinhne"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/music_file_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/music_img"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="File Name"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/music_img"
+        android:layout_toLeftOf="@id/menuMore" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/music_file_name"
+        android:id="@+id/music_artis_name"
+        android:textColor="@color/white"
+        android:text="Artis Name"
+        android:layout_toRightOf="@+id/music_img"
+        android:layout_marginLeft="10dp" />
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:id="@+id/menuMore"
+        android:src="@drawable/ic_baseline_more"
+        android:padding="10dp"
+        android:layout_alignParentRight="true" />
+
+
+</RelativeLayout>

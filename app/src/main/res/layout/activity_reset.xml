@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/hongden"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ResetActivity">
+    <TextView
+        android:id="@+id/username_ne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Email:"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/username_reset_text"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/username_ne"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/password_reset"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:padding="8sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50sp"
+        android:background="@drawable/boder"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="8sp"
+        android:layout_below="@id/username_reset_text"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/repassword_reset"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:padding="8sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50sp"
+        android:background="@drawable/boder"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="8sp"
+        android:layout_below="@+id/password_reset"
+        android:hint="Confirm Password"
+        android:inputType="textPassword" />
+    <Button
+        android:id="@+id/btnconfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="@color/MediumVioletRed"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/repassword_reset"
+        android:text="Xác nhận"/>
+
+</RelativeLayout>

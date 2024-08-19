@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hongden"
+    android:orientation="vertical"
+    tools:context=".UsersFragment">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="116dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="12dp"
+        android:layout_gravity="center"
+
+        android:src="@drawable/useredit" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            android:id="@+id/hihitxtz"
+            android:text="Cảm ơn bạn đã sử dụng ứng dụng"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    ↓<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:id="@+id/hihitxt"
+            android:textStyle="italic"
+            android:text="Ấn vào nút bên dưới để đăng xuất"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageViewz"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/hinhne" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/MediumVioletRed"
+        android:text="Đăng Xuất" />
+</LinearLayout>
